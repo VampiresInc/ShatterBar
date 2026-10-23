@@ -18,10 +18,6 @@ available item. Made by Arametheus as a companion to Mailwright.
 Type /sb to open settings. Shift-drag a profession icon to move its bar.
 One click or key press performs one action or batch; combat and casting pause processing.
 
-Retail workflows have been tested in game. Forever, Classic Era, Mists Classic,
-and Burning Crusade Anniversary packages are available for testing, with in-game
-validation still pending. Translations await native-speaker review.
-
 Warband processing defaults off and may require keeping Jewelcrafting or Inscription
 open. Short stacks are not automatically combined. Item and spell tooltips use the
 client language even when the addon language is overridden.

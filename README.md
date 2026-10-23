@@ -53,22 +53,6 @@ bank items and cached inventory without a live target are excluded.
 Recipe batches use their mapped size: usually five materials, with some newer
 milling recipes requiring ten. Each stack must contain a complete batch.
 
-## Compatibility and testing
-
-Version **0.1.14** provides packages for these clients:
-
-| Package | Client | In-game testing |
-| --- | --- | --- |
-| retail | Retail 12.1.5 | Disenchanting, carried and remote Warband prospecting/milling, lockpicking and opening confirmed |
-| forever | Forever 1.60.1 | Pending |
-| classic | Classic Era 1.15.9 | Pending |
-| mists | Mists Classic 5.5.4 | Pending |
-| bcc | Burning Crusade Anniversary 2.5.6 | Pending |
-
-Retail and Forever are the primary targets. The other packages share capability-based
-API handling, but packaged support does not imply completed in-game testing.
-See [TESTING.md](TESTING.md) for the acceptance checklist and remaining limitations.
-
 ## Languages
 
 English is the default fallback. German, French, Spanish (Spain and Latin America),
