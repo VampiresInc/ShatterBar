@@ -30,6 +30,6 @@ Official guide: https://wowup.io/guide/get-addons/overview
 Hub guide: https://dev.wowup.io/guide/wowup/hub
 Wago API: https://docs.wago.io/
 
-Original listing artwork is in artwork/ShatterBar-icon-master.png and
-artwork/ShatterBar-banner-master.png. Platform-specific exports/crops may be needed
+Original listing artwork is in artwork/ShatterBar-icon-v2.png and
+artwork/ShatterBar-banner-v2.png. Platform-specific exports/crops may be needed
 by each listing form. Gameplay screenshots are still needed; use the screenshot guide.

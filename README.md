@@ -1,6 +1,6 @@
 # ShatterBar
 
-![ShatterBar](artwork/ShatterBar-banner-master.png)
+![ShatterBar](artwork/ShatterBar-banner-v2.png)
 
 Compact World of Warcraft profession bars by **Arametheus**, made as a companion
 to [Mailwright](https://github.com/VampiresInc/Mailwright).
