@@ -28,7 +28,6 @@ casting pause processing. ShatterBar does not move or combine material stacks.
 Download the ZIP matching your client and extract it into `Interface/AddOns`.
 The resulting path should be `Interface/AddOns/ShatterBar/ShatterBar.toc`.
 Restart WoW after first installation and enable ShatterBar in the AddOns list.
-Disable Breakables while testing to keep the bars easy to distinguish.
 
 Type `/sb`, `/shatter`, or `/shatterbar` to open **Settings > AddOns > ShatterBar**
 (**Interface > AddOns** on older clients). Shift-drag a profession icon to move
@@ -98,9 +97,7 @@ modifies a game installation. See [RELEASING.md](RELEASING.md) for release steps
 
 ## Credits and license
 
-Inspired by the workflow of [Breakables by Parnic](https://github.com/parnic/breakables).
-ShatterBar is an independent implementation; no Breakables code or bundled libraries
-ship in the packages. Bundled item data is adapted from Molinari under its MIT license;
+Bundled item data is adapted from Molinari under its MIT license;
 see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ShatterBar's own code is [All Rights Reserved](LICENSE).

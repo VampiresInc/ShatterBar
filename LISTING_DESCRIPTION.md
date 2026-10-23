@@ -26,5 +26,4 @@ Warband processing defaults off and may require keeping Jewelcrafting or Inscrip
 open. Short stacks are not automatically combined. Item and spell tooltips use the
 client language even when the addon language is overridden.
 
-ShatterBar is an independent implementation inspired by Breakables. Bundled Molinari
-item data retains its MIT license; ShatterBar's own code is All Rights Reserved.
+Bundled Molinari item data retains its MIT license; ShatterBar's own code is All Rights Reserved.
