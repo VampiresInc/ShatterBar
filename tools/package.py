@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 VERSION='0.1.14'
-FILES=['Localization.lua','Core.lua','API.lua','Eligibility.lua','Recipes.lua','Scan.lua','UI.lua','Options.lua','Bindings.xml','README.md','LICENSE','TESTING.md','THIRD_PARTY_NOTICES.md','licenses/Molinari-MIT.txt']
+FILES=['Localization.lua','Core.lua','API.lua','Eligibility.lua','Recipes.lua','Scan.lua','UI.lua','Options.lua','Bindings.xml','README.md','GUIDE.md','RELEASE_NOTES.md','LICENSE','TESTING.md','THIRD_PARTY_NOTICES.md','licenses/Molinari-MIT.txt']
 CLIENTS=[('retail','Mainline'),('forever','Camelot'),('classic','Vanilla'),('mists','Mists'),('bcc','TBC')]
 def build():
     dest=ROOT/'dist'/VERSION

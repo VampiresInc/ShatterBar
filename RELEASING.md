@@ -1,35 +1,29 @@
 # Releasing ShatterBar
 
-The initial release is a public preview. Keep the client testing status accurate.
+1. Update Core.lua, every manifest, tools/package.py, and RELEASE_NOTES.md together.
+2. Run `python tests/run.py` with `lupa==2.6`.
+3. Run `python tools/release.py --tag v0.1.14` and `python tools/curseforge.py --tag v0.1.14 --dry-run`.
+4. Commit and push, then create and push the matching annotated version tag.
+5. The tagged workflow tests and validates all five archives, then publishes GitHub assets.
+   Tags containing a hyphen are prereleases; plain version tags are regular releases.
+6. CurseForge upload runs if the repository variable CF_PROJECT_ID is configured.
+   Set it to ShatterBar's numeric project ID and add the repository secret CF_API_KEY.
+   Never use Mailwright's project ID. Do not put API keys into source or chat.
+7. If the GitHub release was published before CurseForge was configured, use the
+   **Publish existing tag to CurseForge** manual workflow with the existing tag.
+   Inspect CurseForge before retrying any interrupted or partially completed upload.
 
-1. Update Core.lua, every manifest, tools/package.py, README.md, and RELEASE_NOTES.md together.
-2. Run `python tests/run.py` with `lupa==2.6`, then `python tools/release.py --tag v0.1.14`.
-3. Add reviewed screenshots to artwork/screenshots and embed them in README.md.
-4. Push the source to the intended GitHub repository, then push the matching version tag.
-5. The tagged workflow reruns tests, validates all client archives, and publishes a GitHub prerelease.
-6. For CurseForge, create the ShatterBar project first. Its project ID and publishing configuration
-   must belong to ShatterBar; never reuse Mailwright's project ID. Configure its API key as a
-   repository secret when enabling CurseForge uploads. The current workflow publishes to GitHub only.
+## Distribution
 
-First launch also needs a project icon and description for the CurseForge listing.
-Do not claim the four non-Retail clients are tested until their acceptance checks pass.
+GitHub releases include retail, forever, classic, mists, and bcc ZIPs, checksums.json,
+and release.json for addon-manager flavor metadata. Each ZIP has a top-level
+ShatterBar folder with client-specific manifests and required data files.
 
-Work files, installed-addon backups, SavedVariables diagnostics, and distribution
-archives are excluded from Git. GitHub release assets contain only the packaged addon.
+CurseForge, Wago, WoWInterface, and WowUp listings each need their own project setup.
+WowUp can install a tagged GitHub release by URL; Hub discovery requires separate setup.
 
-## Distribution targets
+Platform description: LISTING_DESCRIPTION.md.
+Approved artwork: artwork/ShatterBar-icon-v2.png and artwork/ShatterBar-banner-v2.png.
+Screenshots: artwork/screenshots/README.md.
 
-GitHub, CurseForge, Wago Addons, WoWInterface, and WowUp are planned for launch.
-Each hosting project needs its own project identity; no ShatterBar project IDs have
-been supplied yet. Current automation publishes only GitHub. Add other upload jobs
-only after the correct project IDs and repository secrets are available.
-
-WowUp can install a tagged GitHub release by URL. WowUp Hub listing/discovery is a
-separate setup step; do not claim automatic search availability until verified.
-Official guide: https://wowup.io/guide/get-addons/overview
-Hub guide: https://dev.wowup.io/guide/wowup/hub
-Wago API: https://docs.wago.io/
-
-Original listing artwork is in artwork/ShatterBar-icon-v2.png and
-artwork/ShatterBar-banner-v2.png. Platform-specific exports/crops may be needed
-by each listing form. Gameplay screenshots are still needed; use the screenshot guide.
+Private reports, backups, SavedVariables, and working files stay excluded from Git.

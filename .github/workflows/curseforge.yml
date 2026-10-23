@@ -1,0 +1,36 @@
+name: Publish existing tag to CurseForge
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag (for example v0.1.14)
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: curseforge-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependency
+        run: python -m pip install lupa==2.6
+      - name: Run Lua regressions
+        run: python tests/run.py
+      - name: Build and validate client archives
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: python tools/release.py --tag "$RELEASE_TAG"
+      - name: Upload to CurseForge
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_PROJECT_ID: ${{ vars.CF_PROJECT_ID }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: python tools/curseforge.py --tag "$RELEASE_TAG"
