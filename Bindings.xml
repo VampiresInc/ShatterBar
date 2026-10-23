@@ -1,0 +1,7 @@
+<Bindings>
+    <Binding name="CLICK ShatterBarFirst:LeftButton" header="SHATTERBAR" />
+    <Binding name="CLICK ShatterBarFirst_de:LeftButton" />
+    <Binding name="CLICK ShatterBarFirst_prospect:LeftButton" />
+    <Binding name="CLICK ShatterBarFirst_mill:LeftButton" />
+    <Binding name="CLICK ShatterBarFirst_unlock:LeftButton" />
+</Bindings>

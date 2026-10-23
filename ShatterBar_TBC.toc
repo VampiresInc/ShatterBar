@@ -1,0 +1,19 @@
+## Interface: 20506
+## Title: ShatterBar
+## Version: 0.1.14
+## Author: Arametheus
+## Notes: Compact profession bars and first-item keybindings
+## Category: Professions
+## SavedVariables: ShatterBarDB
+## LoadSavedVariablesFirst: 1
+
+Data/NoDisenchant_TBC.lua
+Data/Lockboxes_TBC.lua
+Localization.lua
+Core.lua
+API.lua
+Eligibility.lua
+Recipes.lua
+Scan.lua
+UI.lua
+Options.lua
