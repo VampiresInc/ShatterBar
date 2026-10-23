@@ -73,12 +73,6 @@ Reports can contain item links and item instance identifiers; review before shar
 For a bug report, include client/build, ShatterBar version, profession, item name/ID,
 steps to reproduce, and any Lua error. Do not upload your entire WTF folder.
 
-## Development
-
-Install Python and `lupa==2.6`, then run `python tests/run.py` for Lua 5.1 regression
-checks. `python tools/package.py` builds and validates five ZIPs. Neither script
-modifies a game installation. See [RELEASING.md](RELEASING.md) for release steps.
-
 ## Credits and license
 
 Bundled item data is adapted from Molinari under its MIT license;
