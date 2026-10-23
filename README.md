@@ -2,79 +2,40 @@
 
 ![ShatterBar](artwork/ShatterBar-banner-v2.png)
 
-Compact World of Warcraft profession bars by **Arametheus**, made as a companion
-to [Mailwright](https://github.com/VampiresInc/Mailwright).
-
-Find items you can disenchant, prospect, mill, or unlock without searching through
-your bags. Click an item on its bar, or bind a key to process the first available item.
+A World of Warcraft profession addon by **Arametheus**, with compact bars for disenchanting, prospecting, milling, and lockpicking. Made as a companion to [Mailwright](https://github.com/VampiresInc/Mailwright).
 
 ## Features
 
-- Automatic bars for learned disenchanting, prospecting, milling, and rogue lockpicking.
-- Item counts and available batches, with configurable scale, font size, and direction.
-- A keybinding for the first available item, plus separate bindings for each profession.
-- Lockboxes stay on the bar after unlocking: click again to open and loot.
-- Disenchanting filters for soulbound, warbound, equipment-set items, and tabards.
-- Right-click an item to ignore its type; restore ignored items through settings.
-- Optional Retail Warband Bank ore and herbs, with carried materials preferred.
-- Settings directly in the game's AddOns panel.
-- Automatic client language or a saved language override.
-
-Every click or key press performs one action or one processing batch. Combat and
-casting pause processing. ShatterBar does not move or combine material stacks.
+- Automatic bars for your learned professions and processing recipes.
+- Click an item or bind a key to process the first available item.
+- Item counts and available batches shown on the bar.
+- Pick a lockbox, then click again to open and loot it.
+- Disenchanting filters and an ignore list for items you want to keep.
+- Adjustable bar size, font size, direction, and visibility.
+- Optional Retail Warband Bank ore and herb processing.
+- AddOns settings panel with automatic language selection or a manual override.
 
 ## Installation
 
-Download the ZIP matching your client and extract it into `Interface/AddOns`.
-The resulting path should be `Interface/AddOns/ShatterBar/ShatterBar.toc`.
-Restart WoW after first installation and enable ShatterBar in the AddOns list.
+Download the ZIP for your client. Place the **ShatterBar** folder in your client's `Interface/AddOns` folder, restart WoW, and enable it.
 
-Type `/sb`, `/shatter`, or `/shatterbar` to open **Settings > AddOns > ShatterBar**
-(**Interface > AddOns** on older clients). Shift-drag a profession icon to move
-its bar. Right-click the profession icon to open settings.
+Click an item on a bar to get started. Shift-drag the profession icon to move the bar; right-click the icon to open options. Each click or key press processes one item or batch.
 
-Assign keys in ShatterBar's settings or **Key Bindings > ShatterBar**. Assigning a
-key replaces its previous action. The general binding chooses the first nonempty
-available bar: Disenchant, Prospect, Mill, then Pick Lock. Right-clicking an item
-ignores its type; it does not open an unlocked box. Left-click to open it instead.
+## Options
 
-## Retail recipes and Warband Bank
+Configure ShatterBar through **Settings > AddOns > ShatterBar** (**Interface > AddOns** on older clients), or type `/sb`. Set your keybindings, appearance, visibility, filters, and ignored items there.
 
-Retail prospecting and milling use learned expansion-specific recipes. If a bar
-is missing, open Jewelcrafting or Inscription once to populate recipe data. The
-profession icon opens the relevant profession.
+Language follows your client by default. To override it, choose a language and click **Reload UI**.
 
-Warband ore and herb support are separate experimental settings, both off by
-default. Bank-only entries have a **W** marker. Open the bank or keep the relevant
-profession open so the game exposes live bank targets; opening its material picker
-may also be necessary. Closing the profession can remove remote access. Personal
-bank items and cached inventory without a live target are excluded.
+Warband Bank ore and herbs are optional and off by default. For bank materials, open the bank or keep Jewelcrafting or Inscription open. If a Retail processing bar is missing, open the relevant profession once.
 
-Recipe batches use their mapped size: usually five materials, with some newer
-milling recipes requiring ten. Each stack must contain a complete batch.
+## Slash commands
 
-## Languages
+- `/sb`, `/shatter`, or `/shatterbar` — Open ShatterBar's options.
+- `/sb status` — Show the addon version and listed item counts.
 
-English is the default fallback. German, French, Spanish (Spain and Latin America),
-Italian, Brazilian Portuguese, Russian, Korean, Simplified Chinese, and Traditional
-Chinese translations are included. Choose **Automatic (client language)** or an
-override under **Language**, then click **Reload UI**. The choice saves account-wide.
-Blizzard's item and spell text continues to use the client language. Translations
-and their layouts still need native-speaker and in-game review.
-
-[Report an issue](https://github.com/VampiresInc/ShatterBar/issues) | [Source code](https://github.com/VampiresInc/ShatterBar)
-
-## Troubleshooting
-
-`/sb status` reports the version and listed items. `/sb debug`, `/sb prospectdebug`,
-and `/sb milldebug` record diagnostics; `/reload` writes them to SavedVariables.
-Reports can contain item links and item instance identifiers; review before sharing.
-
-For a bug report, include client/build, ShatterBar version, profession, item name/ID,
-steps to reproduce, and any Lua error. Do not upload your entire WTF folder.
+[Report an issue](https://github.com/VampiresInc/ShatterBar/issues) | [Usage guide](https://github.com/VampiresInc/ShatterBar/blob/main/GUIDE.md)
 
 ## Credits
 
-With thanks to Molinari's original authors and maintainers for the bundled item data.
-ShatterBar is an independent project, released under the [All Rights Reserved license](LICENSE).
-Bundled Molinari data retains its MIT license; see [third-party notices](THIRD_PARTY_NOTICES.md).
+With thanks to Molinari's original authors and maintainers for the bundled item data. ShatterBar is an independent project, released under the [All Rights Reserved license](LICENSE). Bundled Molinari data retains its MIT license; see [third-party notices](THIRD_PARTY_NOTICES.md).
