@@ -73,9 +73,8 @@ Reports can contain item links and item instance identifiers; review before shar
 For a bug report, include client/build, ShatterBar version, profession, item name/ID,
 steps to reproduce, and any Lua error. Do not upload your entire WTF folder.
 
-## Credits and license
+## Credits
 
-Bundled item data is adapted from Molinari under its MIT license;
-see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-ShatterBar's own code is [All Rights Reserved](LICENSE).
+With thanks to Molinari's original authors and maintainers for the bundled item data.
+ShatterBar is an independent project, released under the [All Rights Reserved license](LICENSE).
+Bundled Molinari data retains its MIT license; see [third-party notices](THIRD_PARTY_NOTICES.md).
