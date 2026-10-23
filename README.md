@@ -34,7 +34,7 @@ Warband Bank ore and herbs are optional and off by default. For bank materials, 
 - `/sb`, `/shatter`, or `/shatterbar` — Open ShatterBar's options.
 - `/sb status` — Show the addon version and listed item counts.
 
-[Report an issue](https://github.com/VampiresInc/ShatterBar/issues) | [Usage guide](https://github.com/VampiresInc/ShatterBar/blob/main/GUIDE.md)
+[Screenshots](artwork/screenshots/README.md) | [Report an issue](https://github.com/VampiresInc/ShatterBar/issues) | [Usage guide](https://github.com/VampiresInc/ShatterBar/blob/main/GUIDE.md)
 
 ## Credits
 

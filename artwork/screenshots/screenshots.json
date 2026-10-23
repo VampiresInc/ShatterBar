@@ -1,0 +1,58 @@
+[
+  {
+    "file": "disenchanting.png",
+    "caption": "Disenchanting",
+    "width": 320,
+    "height": 171,
+    "source": "Screenshot 2026-10-23 180545.png",
+    "sha256": "d82722c8501c4bd1c7e3ede557b2290233a5c61df21c2c2d16976cf413f8580f"
+  },
+  {
+    "file": "prospecting.png",
+    "caption": "Prospecting, including Warband Bank materials marked W",
+    "width": 467,
+    "height": 173,
+    "source": "Screenshot 2026-10-23 180730.png",
+    "sha256": "1944756bfba940efb64245ffe7b81d78a296339dd6b3c399b6e8133a8bbef347"
+  },
+  {
+    "file": "milling.png",
+    "caption": "Milling, including Warband Bank materials marked W",
+    "width": 455,
+    "height": 175,
+    "source": "Screenshot 2026-10-23 180936.png",
+    "sha256": "bacbf6e56c47d0d9d0ae7b1c4c0a5d418ddd626ec0db0a51f77c9ede6e65aabb"
+  },
+  {
+    "file": "lockpicking.png",
+    "caption": "Lockpicking",
+    "width": 261,
+    "height": 115,
+    "source": "Screenshot 2026-10-23 181038.png",
+    "sha256": "2170810ea077bca9e7741c7181fe7e9dbd94de89576b78995876d792a72f71c2"
+  },
+  {
+    "file": "options-language-visibility.png",
+    "caption": "Language, visibility, and appearance",
+    "width": 661,
+    "height": 588,
+    "source": "Screenshot 2026-10-23 181059.png",
+    "sha256": "8dc4d28b9c4859c91e34edb506a57f2ebc7d8508ca58bf817c149b647758564e"
+  },
+  {
+    "file": "options-filters-keybindings.png",
+    "caption": "Disenchanting filters and keybindings",
+    "width": 672,
+    "height": 605,
+    "source": "Screenshot 2026-10-23 181130.png",
+    "sha256": "892ebece3a08a8843c305971a33b882092350e5785a03b16064652f968475d80"
+  },
+  {
+    "file": "options-placement-ignored.png",
+    "caption": "Keybindings, placement, and ignored items",
+    "width": 644,
+    "height": 568,
+    "source": "Screenshot 2026-10-23 181140.png",
+    "sha256": "b98e3bd4246c78b6e4cf9dd4e2d7ef470781b519f9e0f0463622b9ecc8f0b16a"
+  }
+]

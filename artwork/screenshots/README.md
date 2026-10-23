@@ -1,15 +1,37 @@
-# Launch screenshots
+# ShatterBar screenshots
 
-Use real ShatterBar 0.1.14 gameplay, with Breakables disabled. Avoid exposing private
-chat, account details, or character information you do not want public. Keep the
-original captures; cropped versions may be added for the public gallery.
+Captured in Retail with ShatterBar 0.1.14. Options are kept as separate images so the text remains readable.
 
-Suggested shots:
+## Profession bars
 
-1. Profession bars: several eligible item icons, with the item tooltip visible.
-2. AddOns options: appearance/filter controls, then language and keybinding controls.
-3. Lockbox: unlocked box showing Open, or the loot window after the second click.
-4. Optional: a Warband-only ore or herb entry showing W and its source tooltip.
+### Disenchanting
 
-Use readable UI scale and PNG files. Suggested filenames: profession-bars.png,
-options-language.png, options-keybindings.png, lockbox-open.png, warband-materials.png.
+![Disenchanting](disenchanting.png)
+
+### Prospecting, including Warband Bank materials marked W
+
+![Prospecting, including Warband Bank materials marked W](prospecting.png)
+
+### Milling, including Warband Bank materials marked W
+
+![Milling, including Warband Bank materials marked W](milling.png)
+
+### Lockpicking
+
+![Lockpicking](lockpicking.png)
+
+## AddOns options
+
+### Language, visibility, and appearance
+
+![Language, visibility, and appearance](options-language-visibility.png)
+
+### Disenchanting filters and keybindings
+
+![Disenchanting filters and keybindings](options-filters-keybindings.png)
+
+### Keybindings, placement, and ignored items
+
+![Keybindings, placement, and ignored items](options-placement-ignored.png)
+
+Images retain the original supplied PNG pixels and dimensions.
