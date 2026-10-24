@@ -574,4 +574,12 @@ check('invalid saved language falls back to the client','''
 assert(ShatterBar.db.language=='auto')
 assert(ShatterBar.kinds[1].label=='Entzaubern')
 ''',locale='deDE',language='invalid')
+# Naming must match packager conventions used by Wago and Mailwright.
+import importlib.util
+spec=importlib.util.spec_from_file_location('shatter_package',ROOT/'tools/package.py')
+package=importlib.util.module_from_spec(spec);spec.loader.exec_module(package)
+for flavor,suffix in [('retail',''),('forever','-forever'),('classic','-classic'),('mists','-mists'),('bcc','-bcc')]:
+    assert package.artifact_name(flavor)==f'ShatterBar-{package.VERSION}{suffix}.zip'
+count+=1
+print('PASS client archive names follow packager conventions')
 print(f'{count} regression scenarios passed. In-game testing remains required.')

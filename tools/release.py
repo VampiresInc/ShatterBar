@@ -3,7 +3,7 @@ import argparse
 import json
 import re
 from pathlib import Path
-from package import ROOT, VERSION, CLIENTS, build
+from package import ROOT, VERSION, CLIENTS, build, artifact_name
 
 
 def release(tag):
@@ -22,7 +22,7 @@ def release(tag):
     for flavor, manifest in CLIENTS:
         toc = (ROOT / f"ShatterBar_{manifest}.toc").read_text(encoding="utf-8")
         interface = int(re.search(r"^## Interface: (\d+)$", toc, re.M).group(1))
-        releases.append({"filename": f"ShatterBar-{VERSION}-{flavor}.zip", "nolib": False,
+        releases.append({"filename": artifact_name(flavor), "nolib": False,
                          "metadata": [{"flavor": flavors[flavor], "interface": interface}]})
     (ROOT / "dist" / VERSION / "release.json").write_text(
         json.dumps({"releases": releases}, indent=2) + "\n", encoding="utf-8")

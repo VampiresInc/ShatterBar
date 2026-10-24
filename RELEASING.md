@@ -48,3 +48,17 @@ that would duplicate these files.
 
 The listing includes the approved icon and banner, description, GitHub source link,
 and seven gameplay/options screenshots. Project visibility depends on moderation.
+
+## Client archive names
+
+Follow the same convention as Mailwright and the packager:
+
+- Retail: `ShatterBar-<version>.zip` (no `-retail` suffix)
+- Forever: `ShatterBar-<version>-forever.zip`
+- Classic Era: `ShatterBar-<version>-classic.zip`
+- Mists Classic: `ShatterBar-<version>-mists.zip`
+- Burning Crusade: `ShatterBar-<version>-bcc.zip`
+
+Cataclysm and Wrath would use `-cata.zip` and `-wrath.zip` if packages are added.
+The initial CurseForge submission used `-retail.zip`; that already-submitted file
+is unchanged. New builds and the corrected GitHub Retail asset use the plain name.

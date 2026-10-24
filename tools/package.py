@@ -5,6 +5,11 @@ ROOT=Path(__file__).resolve().parents[1]
 VERSION='0.1.14'
 FILES=['Localization.lua','Core.lua','API.lua','Eligibility.lua','Recipes.lua','Scan.lua','UI.lua','Options.lua','Bindings.xml','README.md','GUIDE.md','RELEASE_NOTES.md','LICENSE','TESTING.md','THIRD_PARTY_NOTICES.md','licenses/Molinari-MIT.txt']
 CLIENTS=[('retail','Mainline'),('forever','Camelot'),('classic','Vanilla'),('mists','Mists'),('bcc','TBC')]
+def artifact_name(flavor):
+    suffix = "" if flavor == "retail" else "-" + flavor
+    return f"ShatterBar-{VERSION}{suffix}.zip"
+
+
 def build():
     dest=ROOT/'dist'/VERSION
     dest.mkdir(parents=True,exist_ok=True)
@@ -25,7 +30,7 @@ def build():
                 for line in data.decode('utf-8-sig').splitlines():
                     if line.strip() and not line.startswith('#'):
                         assert 'ShatterBar/'+line.strip() in entries, (flavor,line)
-        out=dest/f'ShatterBar-{VERSION}-{flavor}.zip'
+        out=dest/artifact_name(flavor)
         with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
             for name,data in sorted(entries.items()): z.writestr(name,data)
         with zipfile.ZipFile(out) as z:
